@@ -94,10 +94,7 @@ jssor_2_slider_init = function() {
 	    var containerElement = jssor_2_slider.$Elmt.parentNode;
 	    var containerWidth = containerElement.clientWidth;
 	    if (containerWidth) {
-
 	        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-	        console.log(expectedWidth);
-
 	        jssor_2_slider.$ScaleWidth(expectedWidth);
 	    }
 	    else {
