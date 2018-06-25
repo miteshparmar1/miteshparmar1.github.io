@@ -1,0 +1,236 @@
+body, html {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.cursive {
+	font-family: 'Great Vibes', cursive;
+	font-weight: normal;
+	text-transform: none;
+}
+.row {
+	position: relative;
+	border-bottom: solid thin #eee;
+}
+.content{
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 2em;
+}
+.flex {
+	display: flex;
+}
+.fixed {
+	display: block;
+	position: fixed;
+	width: 100%;	
+}
+a:link.no-style,
+a:visited.no-style
+{
+	color: #333;
+	text-decoration: none;
+	transition: opacity .3s;
+}
+a:hover.no-style,
+a:active.no-style {
+	opacity: 0.9;
+}
+
+.mr-1{
+	margin-right: 1em;
+}
+.white-bg {
+	background: #fff;
+}
+.text-right{
+	text-align: right;
+}
+
+.text-center{
+	text-align: center;
+}
+
+ul.no-style{
+	list-style: none;
+	padding-left: 0;
+	margin-left: none;
+}
+ul.no-style li{
+	padding-left: 0;
+}
+
+/*Images*/
+.row-image{
+	background: center #eee;
+	background-size: cover;
+	min-height: 300px;
+}
+
+/*headers*/
+hgroup{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+	hgroup	* {
+	margin: 0;
+}
+
+.big-text{
+	font-size: 3rem;
+}
+.slightly-big-text{
+	font-size: 2rem;
+}
+.all-caps{
+	text-transform: uppercase;
+}
+.footer {
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#topBar {
+	z-index: 9999;
+}
+.slider-image{
+	width: 100%;
+	background: center;
+	background-size: cover;
+}
+
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 032 css*/
+.jssorb032 {position:absolute;}
+.jssorb032 .i {position:absolute;cursor:pointer;}
+.jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+.jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+
+@media screen and (max-width: 640px) {
+	.logo_title{
+		display: block;
+		text-align: center;
+	}
+	.top-links .mr-1,
+	.logo_title .mr-1{
+		margin-right: 0;
+	}
+	.fixed{
+		position: absolute;
+	}
+	.form .label-text .half{
+		width: 100%;
+	}
+	.big-text{
+		font-size: 1.4rem;
+	}
+	.slightly-big-text{
+		font-size: 1.3rem;
+	}
+}
+
+.form-row{
+	background: #9db946;
+	color: #2a4528;
+}
+.form .input{
+	background: rgba(0,0,0,0.1);
+	padding: 0.8em;
+	border: none;
+	margin-bottom: 1em;
+	border-radius: 2px;
+	color: #fff;
+	width: 100%;
+	box-sizing: border-box;
+}
+.form .input:focus{
+	background: rgba(0,0,0,0.3);
+}
+.form .input.button{
+	cursor: pointer;
+	background: #2a4528;
+}
+.form .label-text{
+	color: #2a4528;
+	font-size: 0.8em;
+	display: block;
+}
+.form .label-text .half{
+	width: 50%;
+}
+textarea{
+	font-family: sans-serif;
+}
+.slideshow {
+	position: relative;
+}
+.slideshow .overlay{
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.4+50,0+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.overlay-bg{
+	position: absolute;
+	width: 100%;
+	top:0;
+	z-index: -2;
+	filter: grayscale(1);
+	opacity: 0.3;
+	height: 100%;
+}
+.overlay-bg-white-gradient{
+	position: absolute;
+	width: 100%;
+	top:0;
+	z-index: -1;
+	height: 100%;
+	background: #fff;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+99&0+0,1+58 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 58%,rgba(255,255,255,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 58%,rgba(255,255,255,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */}
